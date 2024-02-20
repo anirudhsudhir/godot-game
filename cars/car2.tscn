@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://nmmb62kvbxai"]
+
+[ext_resource type="Script" path="res://cars/car_2.gd" id="1_3g85n"]
+[ext_resource type="Texture2D" uid="uid://beqepthj0e32m" path="res://cars/Mark 1 - Navy.png" id="2_1ixbh"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_521m2"]
+radius = 12.0
+height = 47.0
+
+[node name="Car2" type="CharacterBody2D"]
+position = Vector2(7853, 2587)
+rotation = 3.14159
+scale = Vector2(2, 2)
+script = ExtResource("1_3g85n")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(-2.5, 0)
+rotation = 1.57079
+scale = Vector2(0.85, 0.85)
+texture = ExtResource("2_1ixbh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -1.07284e-07)
+rotation = -1.57079
+shape = SubResource("CapsuleShape2D_521m2")

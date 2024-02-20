@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=3 uid="uid://bkqv3gcrckhsw"]
+
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_u31k3"]
+[ext_resource type="Texture2D" uid="uid://c3gc3jpdat1y3" path="res://Screenshot 2024-02-17 020541.png" id="1_w7h2i"]
+[ext_resource type="Texture2D" uid="uid://dqw1wan8erl2n" path="res://Cool Text - Hot Speed Racing 452505663458525.png" id="3_yiqke"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_op3mr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8jmv0"]
+
+[node name="MainMenu" type="Node"]
+script = ExtResource("1_u31k3")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_right = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_w7h2i")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -2853.0
+offset_top = -2103.0
+offset_right = -1932.0
+offset_bottom = -1920.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(6, 6)
+texture = ExtResource("3_yiqke")
+
+[node name="start" type="Button" parent="."]
+texture_filter = 1
+anchors_preset = -1
+anchor_left = 0.4978
+anchor_top = 0.5458
+anchor_right = 0.5024
+anchor_bottom = 0.5514
+offset_left = -709.0
+offset_top = -1234.0
+offset_right = 396.0
+offset_bottom = -572.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 500
+theme_override_styles/normal = SubResource("StyleBoxEmpty_op3mr")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_8jmv0")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8jmv0")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_8jmv0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8jmv0")
+text = "Start"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]

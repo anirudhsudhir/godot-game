@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://n1sc5reaq5p4"]
+
+[node name="Ui" type="CanvasLayer"]
+scale = Vector2(15, 15)
+transform = Transform2D(15, 0, 0, 15, 0, 0)
+
+[node name="Panel" type="Panel" parent="."]
+texture_filter = 1
+offset_right = 40.0
+offset_bottom = 40.0

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnqkkctetn0f3"]
+
+[ext_resource type="AudioStream" uid="uid://ce1xrxmmce07w" path="res://super-max.mp3" id="1_ioj7r"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_ioj7r")
+volume_db = -20.194
+autoplay = true
